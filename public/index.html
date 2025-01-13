@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fitness Tracker App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Powered Fitness Tracker</h1>
+
+        <form action="" id="Fitness-form">
+            <label for="weight">Weight (in Kg)</label>
+            <input type="number" id="weight" required>
+
+            <label for="height">Height (in cm)</label>
+            <input type="number" id="height" required>
+
+            <label for="activity">Activity Level</label>
+            <select id="activity">
+                <option value="sedentary">Sedentary</option>
+                <option value="lightlyActive">Lightly Active</option>
+                <option value="moderateActive">Moderately Active</option>
+                <option value="veryActive">Very Active</option>
+            </select>
+
+            <label for="language">Choose Language</label>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+            </select>
+
+            <button type="submit">Get AI Recommendation</button>
+        </form>
+        <div id="loading" >
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+        <div id="results"></div>
+       
+    </div>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

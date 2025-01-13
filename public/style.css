@@ -1,0 +1,128 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 450px;
+    margin: 80px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+/* Header */
+h1 {
+    color: #e84c3d;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+/* Form Elements */
+label {
+    font-size: 14px;
+    color: #444;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Focus Effect */
+input:focus, select:focus {
+    outline: none;
+    border-color: #e84c3d;
+    background-color: #fff;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e84c3d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #c23b2b;
+}
+
+/* Loader Styling */
+#loading {
+    display: none;
+    margin-top: 15px;  /* Adds space between the button and the loader */
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spinner {
+    border: 5px solid #f3f3f3; /* Light grey background */
+    border-top: 5px solid red;  /* Red color */
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Results Section */
+#results {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#results h2 {
+    color: #e84c3d;
+    font-size: 22px;
+}
+
+#results p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+    h1 {
+        font-size: 26px;
+    }
+}
